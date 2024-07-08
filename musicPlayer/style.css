@@ -20,24 +20,30 @@ body{
     margin-right: 15px;
 }
 
+.logo{
+    padding: 10px;
+}
+
 .home ul li{
     display: flex;
     list-style: none;
     gap: 10px;
-    width: 18px;
+    width: 24px;
     padding-top: 14px;
     font-weight: 700;
     cursor: pointer;
+    margin-left: 10px;
 }
 
 .library ul li{
     display: flex;
     list-style: none;
     gap: 10px;
-    width: 19px;
+    width: 24px;
     /* padding-top: 14px; */
     font-weight: 700;
     cursor: pointer;
+    margin: 10px;
 }
 
 .library{
@@ -52,11 +58,14 @@ body{
     gap: 13px;
     position: absolute;
     bottom: 0;
+    padding-bottom: 20px;
 }
 
 .home{
     margin: 5px;
     margin-bottom: 15px;
+    padding: 10px;
+    padding-bottom: 20px;
 }
 
 .footer a{
@@ -74,6 +83,17 @@ body{
     padding: 20px;
 }
 
+.navbar button{
+    height: 35px;
+    width: 35px;
+    border: 50px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    background-color: grey;
+    color: white;
+}
+
 button{
     height: 35px;
     width: 85px;
@@ -81,4 +101,65 @@ button{
     border: none;
     cursor: pointer;
     font-size: 15px;
+}
+
+.playlist{
+    padding: 16px;
+}
+
+.playlist h1{
+    padding-bottom: 20px;
+}
+
+.cardContainer{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+
+}
+
+.card{
+    width: 150px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: hsl(0, 0%, 15%);
+    position: relative;
+    cursor: pointer;
+}
+
+.card:hover{
+    background-color: hsl(0, 0%, 30%);
+    transition: all 0.3s ease-in-out;
+}
+
+.card > *{
+    padding-top: 5px;
+}
+
+.card img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.play{
+    height: 25px;
+    width: 50px;
+    border: 50px;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    background-color: #1fdf64;
+    color: white;
+    position: absolute;
+    bottom: 35%;
+    right: 12%;
+    transition: all 1s ease-out;
+}
+
+.card h2{
+    font-size: 20px;
+}
+
+.card p{
+    font-size: 14px;
 }
