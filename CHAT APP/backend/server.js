@@ -21,6 +21,11 @@ app.get('/', (req, res) => {
     console.log('sever has started...');
 })
 
+// importing routes
+import authRouters from './routes/auth.routes.js'
+
+app.arguments('/api/auth', authRouters);
+
 app.listen(3000, () => {
     console.log('server log...' + PORT);
 })
